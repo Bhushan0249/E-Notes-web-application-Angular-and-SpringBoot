@@ -1,0 +1,97 @@
+<app-header></app-header>
+
+<section class="vh-">
+  <div class="container-fluid h-custom">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+     
+      <div
+        class="col-md-8 col-lg-6 col-xl-4 offset-xl-1"
+        style="margin-top: 140px; margin-right: 54%; box-shadow: 5px 5px 5px 5px rgb(209, 184, 194);"
+      >
+        <!-- user name input -->
+        <div data-mdb-input-init class=" mb-4" style="margin-top: 20px;">
+          <input
+            [(ngModel)]="addData.name"
+            type="text"
+            id="form3Example3"
+            class="form-control form-control-lg"
+            placeholder="Enter User Name"
+          />
+          <!-- <label class="form-label" for="form3Example3"><b>User Name</b></label> -->
+        </div>
+
+        <!-- email id input -->
+        <div data-mdb-input-init class=" mb-4">
+          <input
+            [(ngModel)]="addData.email"
+            type="email"
+            id="form3Example4"
+            class="form-control form-control-lg"
+            placeholder="Email ID"
+          />
+          <!-- <label class="form-label" for="form3Example4"><b>Email ID</b></label> -->
+        </div>
+
+        <!-- Password input -->
+        <div data-mdb-input-init class=" mb-4">
+          <input
+            [(ngModel)]="addData.password"
+            type="password"
+            id="form3Example4"
+            class="form-control form-control-lg"
+            placeholder="Enter password"
+          />
+          <!-- <label class="form-label" for="form3Example4"><b>Password</b></label> -->
+        </div>
+
+        <!-- user Age input -->
+        <div data-mdb-input-init class=" mb-4">
+          <input
+            [(ngModel)]="addData.age"
+            type="text"
+            id="form3Example4"
+            class="form-control form-control-lg"
+            placeholder="Enter Age"
+          />
+          <!-- <label class="form-label" for="form3Example4"><b>User Age</b></label> -->
+        </div>
+
+        <div data-mdb-input-init class="" style="margin-bottom: 20px; text-align: center;">
+          <button
+            (click)="onSubmit()"
+            type="button"
+            data-mdb-button-init
+            data-mdb-ripple-init
+            class="btn btn-primary btn-lg col-4"
+            style=" margin-right: 30px"
+          >
+            Submit
+          </button>
+          <button
+            routerLink=""
+            type="button"
+            data-mdb-button-init
+            data-mdb-ripple-init
+            class="btn btn-warning btn-lg col-4"
+          >
+            Login
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <nav
+    style="padding-top: 25px"
+    class="navbar navbar-expand-sm bg-dark navbar-dark fixed-bottom"
+  >
+    <h6 style="margin-left: 23%; color: white">
+      <b
+        >© 2024-2025 Bhushan Galphade. All Rights Reserved. For inquiries,
+        please contact:<a href="https://www.linkedin.com/in/bhushan0242"
+          >Click Here.</a
+        >
+      </b>
+    </h6>
+  </nav>
+</section>

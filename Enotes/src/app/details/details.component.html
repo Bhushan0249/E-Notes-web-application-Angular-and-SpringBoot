@@ -1,0 +1,87 @@
+<div
+  class="container-fluid"
+  style="box-shadow: 10px 20px 25px 10px rgb(83, 10, 10); padding-bottom: 20px"
+>
+  <ul class="navbar navbar-expand-sm bg-warning navbar-dark fixed-top">
+    <h4
+      class="fst-italic text-primary bg-gradient"
+      style="padding: 5px; box-shadow: 2px 2px 2px 2px rgb(242, 242, 244)"
+    >
+      E-Notes Web Application
+    </h4>
+
+    <button
+      style="margin-left: 65%"
+      routerLink="/addNotes"
+      class="btn btn-primary"
+      style="
+        margin-left: 66%;
+        padding: 5px;
+        box-shadow: 2px 2px 2px 2px rgb(242, 242, 244);
+      "
+    >
+      addNotes
+    </button>
+
+    <button
+      routerLink=" "
+      class="btn btn-danger"
+      style="padding: 5px; box-shadow: 2px 2px 2px 2px rgb(242, 242, 244)"
+    >
+      Logout
+    </button>
+  </ul>
+
+  <div style="margin-top: 60px">
+    <table class="table table-hover">
+      <thead>
+        <tr style="font-family: serif; text-align: center">
+          <th>Sr.No</th>
+          <th>Tasks</th>
+          <th>View More</th>
+          <th>Notes Title</th>
+          <th>Notes Content</th>
+        </tr>
+      </thead>
+      <tbody style="text-align: center">
+        <tr style="font-family: serif" *ngFor="let item of empData; index as i">
+          <td>{{ i + 1 }}</td>
+
+          <td>
+            <button (click)="onUpdate(item.nid)" class="btn btn-primary">
+              Edit
+            </button>
+            <button (click)="onDeleted(item.nid)" class="btn btn-danger">
+              Delete
+            </button>
+          </td>
+          <td>
+            <button (click)="aboutIfo(item.nid)" class="btn btn-warning">
+              MoreInfo
+            </button>
+          </td>
+          <td>
+            <b>{{ item.title }}</b>
+          </td>
+          <td>
+            <b>{{ item.content }}</b>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <hr />
+  <nav
+    style="padding-top: 25px"
+    class="navbar navbar-expand-sm bg-dark navbar-dark fixed-bottom"
+  >
+    <h6 style="margin-left: 23%; color: white">
+      <b
+        >© 2024-2025 Bhushan Galphade. All Rights Reserved. For inquiries,
+        please contact:<a href="https://www.linkedin.com/in/bhushan0242"
+          >Click Here.</a
+        >
+      </b>
+    </h6>
+  </nav>
+</div>

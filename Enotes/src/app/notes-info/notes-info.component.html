@@ -1,0 +1,101 @@
+<ul class="navbar navbar-expand-sm bg-warning navbar-dark fixed-top">
+  <h4
+    class="fst-italic text-primary bg-gradient"
+    style="padding: 5px; box-shadow: 2px 2px 2px 2px rgb(242, 242, 244)"
+  >
+    E-Notes Web Application
+  </h4>
+  
+
+  <button
+   
+    routerLink="/addNotes"
+    class="btn btn-primary"
+    style="
+      margin-left: 67%;
+      padding: 5px;
+      box-shadow: 2px 2px 2px 2px rgb(242, 242, 244);
+    "
+  >
+    addNotes
+  </button>
+
+  <button
+    routerLink=" "
+    class="btn btn-danger"
+    style="padding: 5px; box-shadow: 2px 2px 2px 2px rgb(242, 242, 244)"
+  >
+    Logout
+  </button>
+</ul>
+
+<div class="container mt-" style="padding-top: 130px; padding-left: 210px">
+  <div class="row">
+    <div class="col-1">
+      <div
+        class="card"
+        style="
+          width: 700px;
+          box-shadow: 10px 10px 10px 10px rgb(127, 59, 32);
+          text-align: center;
+        "
+      >
+        <div class="card-header" style="background-color: bisque">
+          <h4 style="font-family: Georgia, 'Times New Roman', Times, serif">
+            User Name:
+            <b class="text-decoration-underline" >
+              {{ addData.user.name | titlecase }}</b
+            >.
+          </h4>
+          <h5 style="font-family: Georgia, 'Times New Roman', Times, serif">
+            Email Id: {{ addData.user.email }}
+          </h5>
+        </div>
+
+        <div class="card-header" style="background-color: antiquewhite">
+          <h5 style="font-family: Georgia, 'Times New Roman', Times, serif">
+            Created Date: {{ addData.createdDate | date : "short" }}
+          </h5>
+          <h5 style="font-family: Georgia, 'Times New Roman', Times, serif">
+            Updated Date: {{ addData.updatedDate | date : "short" }}
+          </h5>
+        </div>
+
+        <div class="card-body" style="background-color: rgb(222, 240, 246)">
+          <h5
+            style="
+              font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                sans-serif;
+            "
+          >
+            {{ addData.title }}
+          </h5>
+          <h6 style="font-family: inherit">{{ addData.content }}</h6>
+        </div>
+
+        <div
+          class="card-footer d-flex justify-content-center"
+          style="background-color: rgb(214, 214, 214)"
+        >
+          <button routerLink="/details" class="btn btn-warning">
+            <b>View Notes</b>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <nav
+    style="padding-top: 25px"
+    class="navbar navbar-expand-sm bg-dark navbar-dark fixed-bottom"
+  >
+    <h6 style="margin-left: 23%; color: white">
+      <b
+        >© 2024-2025 Bhushan Galphade. All Rights Reserved. For inquiries,
+        please contact:<a href="https://www.linkedin.com/in/bhushan0242"
+          >Click Here.</a
+        >
+      </b>
+    </h6>
+  </nav>
+</div>

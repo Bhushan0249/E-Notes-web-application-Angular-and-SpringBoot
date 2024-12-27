@@ -1,0 +1,7 @@
+:host {
+    display: block;
+    background-image: url('/assets/EnotesAddNotes.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  }

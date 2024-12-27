@@ -1,0 +1,11 @@
+:host {
+    display: block;
+    background-image: url('/assets/Enotes111.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  }
+
+ button{
+  margin: 5px;
+ }

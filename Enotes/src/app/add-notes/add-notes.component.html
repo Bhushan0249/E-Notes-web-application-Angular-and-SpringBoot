@@ -1,0 +1,113 @@
+<div
+  class="container-fluid"
+  style="box-shadow: 10px 20px 25px 10px rgb(83, 10, 10); padding-bottom: 20px"
+>
+  <ul class="navbar navbar-expand-sm bg-warning navbar-dark fixed-top">
+    <h4
+      class="fst-italic text-primary bg-gradient"
+      style="padding: 5px; box-shadow: 2px 2px 2px 2px rgb(242, 242, 244)"
+    >
+      E-Notes Web Application
+    </h4>
+
+    <button
+      style="margin-left: 65%"
+      routerLink="/details"
+      class="btn btn-primary"
+      style="
+        margin-left: 65%;
+        padding: 5px;
+        box-shadow: 2px 2px 2px 2px rgb(242, 242, 244);
+      "
+    >
+      Show Notes
+    </button>
+
+    <button
+      routerLink=" "
+      class="btn btn-danger"
+      style="padding: 5px; box-shadow: 2px 2px 2px 2px rgb(242, 242, 244)"
+    >
+      Logout
+    </button>
+  </ul>
+
+
+
+<section class="vh-">
+  <div class="container-fluid h-custom">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div
+        class="col-md-8 col-lg-6 col-xl-5 offset-xl-1"
+        style="
+        margin-right: 10%;
+          margin-top: 140px;
+          box-shadow: 5px 5px 5px 5px rgb(187, 186, 185);
+          text-align: center;
+        "
+      >
+        <!-- usename input -->
+        <div data-mdb-input-init class="mb-5" style="margin: 25px">
+          <input
+            [(ngModel)]="addData.title"
+            name="text"
+            type="text"
+            id="form3Example4"
+            class="form-control form-control-lg"
+            placeholder="Enter Username"
+            required
+          />
+        </div>
+
+        <div data-mdb-input-init class="mb-5" style="margin: 25px">
+         
+          <textarea
+          [(ngModel)]="addData.content"
+            placeholder="Enter contact"
+            class="form-control form-control-lg"
+            name="contact"
+            id=""
+          ></textarea>
+
+          <!-- <label class="form-label" for="form3Example4"><b>User Age</b></label> -->
+        </div>
+
+        <div data-mdb-input-init class="" style="margin-bottom: 25px">
+          <button
+          (click)="onSubmit()"
+            type="button"
+            data-mdb-button-init
+            data-mdb-ripple-init
+            class="btn btn-primary btn-lg col-4"
+            style="margin-right: 30px"
+          >
+            Save Notes
+          </button>
+          <button
+          routerLink="/details"
+            type="button"
+            data-mdb-button-init
+            data-mdb-ripple-init
+            class="btn btn-warning btn-lg col-4"
+          >
+            View Notes
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <nav
+    style="padding-top: 25px"
+    class="navbar navbar-expand-sm bg-dark navbar-dark fixed-bottom"
+  >
+    <h6 style="margin-left: 23%; color: white">
+      <b
+        >© 2024-2025 Bhushan Galphade. All Rights Reserved. For inquiries,
+        please contact:<a href="https://www.linkedin.com/in/bhushan0242"
+          >Click Here.</a
+        >
+      </b>
+    </h6>
+  </nav>
+</section>
