@@ -72,7 +72,7 @@ Repository Layer:
 Interfaces extending JpaRepository for CRUD operations.
 
 Service Layer:
-Contains business logic for user and note operations.
+Contains business logic for user and note operations..
 
 Controller Layer:
 Exposes REST APIs for handling requests from the Angular frontend.
