@@ -1,4 +1,4 @@
-E-Notes Web Application Description
+#E-Notes Web Application Description
  
 Project Overview
 The E-Notes Web Application is a full-stack project that allows users to manage their personal notes efficiently. 
