@@ -40,7 +40,7 @@ public class MainController {
 	public ResponseEntity<String> upUser(@RequestBody User user, @PathVariable int id) {
 
 		String msg = servi.upUser(user, id);
-
+System.out.print();
 		return ResponseEntity.ok(msg);
 
 	}
